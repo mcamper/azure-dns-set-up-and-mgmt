@@ -33,12 +33,13 @@ Building on a previously established domain controller and Client-1 VM, this tut
 <h2>Step 1: A-Record Exercise</h2>
 <p>
   <ol>
-    <li>Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin)</li>
-    <li>Connect/log into Client-1 as an admin (mydomain\jane_admin)</li>
-    <li>From Client-1, try to ping "mainframe". Notice that it fails</li>
-    <li>Nslookup "mainframe". Notice that it fails (no DNS record)</li>
+    <li>Inspect DNS A-Records on the Server</li>
+      <ul><li>Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin)</li></ul>
+      <ul><li>Connect/log into Client-1 as an admin (mydomain\jane_admin)</li></ul>
+      <ul><li>From Client-1, try to ping "mainframe". Notice that it fails</li></ul>
+      <ul><li>Nslookup "mainframe". Notice that it fails (no DNS record)</li></ul>
     <li>Create a DNS A-Record on DC-1 for "mainframe" and have it point to DC-1' Private IP address</li>
-    <li>Go back to Client-1 and try to ping it. Observe that it works</li>
+      <ul><li>Go back to Client-1 and try to ping it. Observe that it works</li></ul>
       <ul>
         <li>Notice that it fails</li>
         <img width="485" alt="image" src="https://github.com/user-attachments/assets/78f1eedd-6059-42a3-8ed1-f49022093ec8" />
@@ -191,7 +192,7 @@ Building on a previously established domain controller and Client-1 VM, this tut
       </ul>
   </ol>
 <p>
-<h2>Step 3: Setup Remote Desktop for Non-Administrative Users</h2>
+<h2>Step 3: Create CNAME Record</h2>
 <p>
   <ol>
      <li>Setup Remote Desktop for non-administrative users on Client-1</li>
