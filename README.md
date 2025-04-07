@@ -22,22 +22,27 @@ Building on a previously established domain controller and Client-1 VM, this tut
 
 <h2>High-Level Deployment, Configuration and Management Steps</h2>
 
-- Step 1: Preparing Active Directory Infrastructure in Azure
-- Step 2: Deploying Active Directory and Configuration
-- Step 3: Setup Remote Desktop for Non-Administrative Users
-- Step 4: Create Users with PowerShell
+- Step 1: A-Record Exercise
+- Step 2: Local DNS Cache Exercise
+- Step 3: CNAME Record Exercise
+- Step 4: Create a "CName"  Record
 - Step 5: Enabling and Unlocking Accounts and Resetting Passwords
 - Step 5: Group Policy & Managing Accounts
 
 
-<h2>Step 1: Preparing Active Directory Infrastructure in Azure</h2>
+<h2>Step 1: A-Record Exercise</h2>
 <p>
   <ol>
-    <li>Setup Domain Controller in Azure</li>
+    <li>Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin)</li>
+    <li>Connect/log into Client-1 as an admin (mydomain\jane_admin)</li>
+    <li>From Client-1, try to ping "mainframe". Notice that it fails</li>
+    <li>Nslookup "mainframe". Notice that it fails (no DNS record)</li>
+    <li>Create a DNS A-Record on DC-1 for "mainframe" and have it point to DC-1' Private IP address</li>
+    <li>Go back to Client-1 and try to ping it. Observe that it works</li>
       <ul>
-        <li>Create a Resource Group named "Active-Directory-Lab"</li>
+        <li>Notice that it fails</li>
         <img width="485" alt="image" src="https://github.com/user-attachments/assets/78f1eedd-6059-42a3-8ed1-f49022093ec8" />
-        <li>Create a Virtual Network and Subnet named "Active-Directory-VNet". Select the previously created Resource Group</li>
+        <li>Nslookup "mainframe"</li>
         <img width="488" alt="image" src="https://github.com/user-attachments/assets/8b395571-b06d-4b19-afcf-f931e0ac78f0" />
         <img width="357" alt="image" src="https://github.com/user-attachments/assets/685ba339-b9b4-4889-8d46-99cc260d668e" />
         <li>Create the Domain Controller VM (Windows Server 2022) named "DC-1". Select the previously created Resource Group</li>
@@ -115,37 +120,23 @@ Building on a previously established domain controller and Client-1 VM, this tut
      
 </ol>
 
-<h2>Step 2: Deploying Active Directory and Configuration</h2>
+<h2>Step 2: Local DNS Cache Exercise</h2>
 <p>
   <ol>
-     <li>Install Active Directory Domain Services</li>
+    <li>Go back to DC-1 and change mainframe's record address to 8.8.8.8</li>
+    <li>Go back to Client-1 and ping "mainframe" again. Observe that it still pings the old address</li>
+    <li>Observe the local DNS cache (iponfig /displaydns)</li>
+    <li>flush the DNS cache (ipconfig /flushdns)</li>
+    <li>Observe that the cache is empty (iponfig /displaydns)</li>
+    <li>Attemp to ping "mainframe" again. Observe the address of the new record is showing up</li>
        <ul>
           <li>Remote Desktop into DC-1 using the Public IP Address</li>
           <li>Install Active Directory Domain Services</li>
           <img width="713" alt="image" src="https://github.com/user-attachments/assets/71aee3fc-cdda-48d5-9641-e0d2ea5e4a03" /> 
-          <img width="488" alt="image" src="https://github.com/user-attachments/assets/5a7b7ec0-6b7b-483d-80b2-9df7e00900b3" />
-          <img width="494" alt="image" src="https://github.com/user-attachments/assets/554dd7db-689d-409d-90ed-6ac5f95c91f5" />
-          <img width="493" alt="image" src="https://github.com/user-attachments/assets/8646a212-c180-474a-b3d8-1956e5f15cad" />
-          <img width="497" alt="image" src="https://github.com/user-attachments/assets/c9841577-59b4-455f-8e98-75e8f2e1b94b" />
-          <img width="262" alt="image" src="https://github.com/user-attachments/assets/753fc772-f939-4d17-9b7a-241e15f5acac" />
-          <img width="494" alt="image" src="https://github.com/user-attachments/assets/420cd626-1840-4833-93d5-9bf26085d6f1" />
-          <img width="491" alt="image" src="https://github.com/user-attachments/assets/80356d31-1e35-4a76-85ff-40fd699ee09a" />
-          <img width="490" alt="image" src="https://github.com/user-attachments/assets/f47506d1-8468-4591-9d15-c93d1ba2c44c" />
-          <img width="592" alt="image" src="https://github.com/user-attachments/assets/cd2ecd22-b807-4bb4-bdd7-662b260239fc" />
-          <img width="494" alt="image" src="https://github.com/user-attachments/assets/d6a6b4ac-b622-4ffb-b8e1-7904477da4e9" />
       </ul>
        <li>Promote as a DC: Setup a new forest as mydomain.com (can be anything)</li>
      <ul>
        <img width="956" alt="image" src="https://github.com/user-attachments/assets/8c0870dd-5ac7-434e-8f8a-6eec6ad1de36" />
-       <img width="216" alt="image" src="https://github.com/user-attachments/assets/d798ca04-adb3-405f-b521-cd5d77ff1379" />
-       <img width="478" alt="image" src="https://github.com/user-attachments/assets/5b4acf26-f363-433b-8440-955993c32df9" />
-       <img width="474" alt="image" src="https://github.com/user-attachments/assets/22a196fa-629c-4da6-9e4f-8e1c1c5ef00f" />
-       <img width="478" alt="image" src="https://github.com/user-attachments/assets/fab1ae36-628e-4160-926b-9ae0e0d72eb7" />
-       <img width="478" alt="image" src="https://github.com/user-attachments/assets/b5937559-6407-4520-805c-cd6d85b333e4" />
-       <img width="481" alt="image" src="https://github.com/user-attachments/assets/1a9ea0fd-b04e-4734-a44b-312b8fdca18d" />
-       <img width="476" alt="image" src="https://github.com/user-attachments/assets/0d82e5b1-98bd-498a-9f91-ee210e9951bf" />
-       <img width="481" alt="image" src="https://github.com/user-attachments/assets/f2ce3f84-eaf6-412e-b037-c28ed08714ce" />
-       <img width="475" alt="image" src="https://github.com/user-attachments/assets/39aca6ef-b7f7-4f17-b6a2-4f3bf9a7fb87" />
       <li>Computer will restart. After restarting, log back into DC-1 as user: mydomain.com\labuser password: Cyberlab123!</li>
        <img width="259" alt="image" src="https://github.com/user-attachments/assets/c161bae1-e0c8-4fbc-8c79-ac235b4099d6" />
        <img width="254" alt="image" src="https://github.com/user-attachments/assets/05a93807-49fe-4902-a9cd-87a15e93ca75" />
