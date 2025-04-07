@@ -22,11 +22,7 @@ Building on a previously established domain controller and Client-1 VM, this tut
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- AzAD-DomainSetup(https://github.com/mcamper/AzAD-DomainSetup)
 
 <h2>High-Level Deployment, Configuration and Management Steps</h2>
 
