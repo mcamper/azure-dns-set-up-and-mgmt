@@ -27,8 +27,8 @@ Building on a previously established domain controller and Client-1 VM, this tut
 <h2>Requirements</h2>
 
 - You've must have completed the last lab AzAD-DomainSetup(https://github.com/mcamper/AzAD-DomainSetup) and have the following setup:
-  <li>Active Directory running in Azure on a virtual machine (DC-1)</li>
-  <li>A client machine running in Azure on a virtual machine (Client-1) and joined to the domain</li>
+  <ul><li>Active Directory running in Azure on a virtual machine (DC-1)</li>
+  <li>A client machine running in Azure on a virtual machine (Client-1) and joined to the domain</li></ul>
 
 <h2>High-Level Deployment, Configuration and Management Steps</h2>
 
