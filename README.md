@@ -30,7 +30,7 @@ Building on a previously established domain controller and Client-1 VM, this tut
   <ul><li>Active Directory running in Azure on a virtual machine (DC-1)</li>
   <li>A client machine running in Azure on a virtual machine (Client-1) and joined to the domain</li></ul>
 
-<h2>High-Level Deployment, Configuration and Management Steps</h2>
+<h2>Overview of DNS Setup and Management in Azure</h2>
 
 - Step 1: A-Record Exercise
 - Step 2: Local DNS Cache Exercise
