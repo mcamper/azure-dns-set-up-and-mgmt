@@ -93,10 +93,18 @@ Building on a previously established domain controller and Client-1 VM, this tut
               <img width="475" alt="image" src="https://github.com/user-attachments/assets/42524bbc-9244-47d9-abcb-b5c1b8d0a7e4" />
     <li>Go back to Client-1 and ping "mainframe" again. Observe that it still pings the old address</li>
               <img width="453" alt="image" src="https://github.com/user-attachments/assets/38c8853d-4241-490f-a311-bba2517b0219" />
-    <li>Observe the local DNS cache (iponfig /displaydns)</li>
+    <li>Observe the local DNS cache (iponfig /displaydns)</li>          
+              <img width="408" alt="image" src="https://github.com/user-attachments/assets/e3eb0f8c-2c16-4ccc-88cd-bd4593a303f7" />
+              <img width="404" alt="image" src="https://github.com/user-attachments/assets/6e40b7de-092a-489a-9f70-30a965400b1a" />
     <li>Delete record(s) from server and observe the client DNS cache</li>
+              <img width="503" alt="image" src="https://github.com/user-attachments/assets/bc734b92-bfb5-4054-b9cd-e7e0a0352ac8" />
+              <img width="283" alt="image" src="https://github.com/user-attachments/assets/0dc20a6a-c406-4bb9-b3a7-3bc66a59a846" />
       <ul><li>Flush the DNS cache (ipconfig /flushdns)</li></ul>
+              <img width="299" alt="image" src="https://github.com/user-attachments/assets/4c4fa23d-90fb-4874-9c5f-96807f0c2ede" />
+              <img width="323" alt="image" src="https://github.com/user-attachments/assets/a453e8c7-6cb2-406d-a7b2-a1cc55b92dde" />
       <ul><li>Observe that the cache is empty (iponfig /displaydns)</li></ul>
+              <img width="280" alt="image" src="https://github.com/user-attachments/assets/083e6681-3687-4c59-8f54-9d26d9515309" />
+
     <li>Attempt to ping "mainframe" again. Observe the address of the new record is showing up</li>
     
   </ol>
