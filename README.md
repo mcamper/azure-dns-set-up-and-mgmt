@@ -77,6 +77,12 @@ Building on a previously established domain controller and Client-1 VM, this tut
             <img width="474" alt="image" src="https://github.com/user-attachments/assets/04574893-e3c5-4057-b8af-7ce5a1850c27" />
             <img width="468" alt="image" src="https://github.com/user-attachments/assets/2d3181e3-b8e2-4252-9728-f562d1067cc7" />
             <img width="217" alt="image" src="https://github.com/user-attachments/assets/9febe1be-e8ed-48e4-9064-74d85d4f697b" />
+            <img width="253" alt="image" src="https://github.com/user-attachments/assets/284f4ad7-1c95-463d-b5ed-26ca930ccf57" />
+            <img width="218" alt="image" src="https://github.com/user-attachments/assets/19b8442c-100c-4894-9c66-d3cb14715ed4" />
+            <img width="467" alt="image" src="https://github.com/user-attachments/assets/c7895d24-efb3-4f8a-a7e2-42cd53859719" />
+
+
+
 
 
 
