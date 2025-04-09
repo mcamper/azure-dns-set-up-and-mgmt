@@ -63,6 +63,10 @@ Building on a previously established domain controller and Client-1 VM, this tut
         <ul><li>Look for host file</li></ul>
         <ul><li>File > Open > File type: All Files > Windows > System32 > drivers > open > etc > hosts </li></ul>
             <img width="498" alt="image" src="https://github.com/user-attachments/assets/97223105-c01c-46c7-b182-d20a47a85d9f" />
+            <img width="485" alt="image" src="https://github.com/user-attachments/assets/2c95f1f7-e51a-46b2-9fd8-66e96a6c9a00" />
+            <img width="482" alt="image" src="https://github.com/user-attachments/assets/49601589-6c33-4a56-9b6c-012da677049d" />
+
+
 
     
          <ul><li>Nslookup "mainframe". Notice that it fails (no DNS record)</li></ul>
