@@ -104,6 +104,12 @@ Building on a previously established domain controller and Client-1 VM, this tut
               <img width="323" alt="image" src="https://github.com/user-attachments/assets/a453e8c7-6cb2-406d-a7b2-a1cc55b92dde" />
       <ul><li>Observe that the cache is empty (iponfig /displaydns)</li></ul>
               <img width="280" alt="image" src="https://github.com/user-attachments/assets/083e6681-3687-4c59-8f54-9d26d9515309" />
+              <img width="317" alt="image" src="https://github.com/user-attachments/assets/04309da2-fc53-49da-a77a-8c5843bea8cc" />
+              <img width="281" alt="image" src="https://github.com/user-attachments/assets/10be1511-0082-47d2-8622-e75e9abfcbab" />
+              <img width="284" alt="image" src="https://github.com/user-attachments/assets/845b0621-cc22-44e9-95dc-4f9464bdeded" />
+
+
+
 
     <li>Attempt to ping "mainframe" again. Observe the address of the new record is showing up</li>
     
