@@ -88,6 +88,8 @@ Building on a previously established domain controller and Client-1 VM, this tut
 <p>
   <ol>
     <li>Go back to DC-1 and change mainframe's record address to 8.8.8.8</li>
+              <img width="641" alt="image" src="https://github.com/user-attachments/assets/98b654a9-84b0-4cc2-b402-bacb8cc1cc2a" />
+              <img width="246" alt="image" src="https://github.com/user-attachments/assets/9cb2f164-2398-48b4-a7bb-691d6c9c57ff" />
     <li>Go back to Client-1 and ping "mainframe" again. Observe that it still pings the old address</li>
     <li>Observe the local DNS cache (iponfig /displaydns)</li>
     <li>Delete record(s) from server and observe the client DNS cache</li>
