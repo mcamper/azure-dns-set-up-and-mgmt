@@ -79,17 +79,9 @@ Building on a previously established domain controller and Client-1 VM, this tut
             <img width="217" alt="image" src="https://github.com/user-attachments/assets/9febe1be-e8ed-48e4-9064-74d85d4f697b" />
             <img width="253" alt="image" src="https://github.com/user-attachments/assets/284f4ad7-1c95-463d-b5ed-26ca930ccf57" />
             <img width="218" alt="image" src="https://github.com/user-attachments/assets/19b8442c-100c-4894-9c66-d3cb14715ed4" />
-            <img width="467" alt="image" src="https://github.com/user-attachments/assets/c7895d24-efb3-4f8a-a7e2-42cd53859719" />
-
-
-
-
-
-
-
-      
-      <ul><li>Go back to Client-1 and try to ping it. Observe that it works</li></ul>
-          
+            <img width="467" alt="image" src="https://github.com/user-attachments/assets/c7895d24-efb3-4f8a-a7e2-42cd53859719" />    
+          <ul><li>Go back to Client-1 and try to ping it. Observe that it works</li></ul>
+              <img width="402" alt="image" src="https://github.com/user-attachments/assets/647d4e88-8697-4d87-b7a3-676730b8d43b" />          
 </ol>
 
 <h2>Step 2: Local DNS Cache Exercise</h2>
