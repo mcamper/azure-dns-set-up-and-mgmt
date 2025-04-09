@@ -56,8 +56,17 @@ Building on a previously established domain controller and Client-1 VM, this tut
           <img width="452" alt="image" src="https://github.com/user-attachments/assets/62f390af-f01d-46f8-8318-980583a3a526" />
           <img width="243" alt="image" src="https://github.com/user-attachments/assets/3ecf8c4f-1e76-4eb5-808a-b6620c7467e8" />
           <img width="143" alt="image" src="https://github.com/user-attachments/assets/be7fdbba-6189-492a-8b73-587f2d9517e4" />
-          <img width="425" alt="image" src="https://github.com/user-attachments/assets/118faf18-c0a6-4e37-a3ac-1995b3696e5d" />
-      <ul><li>Nslookup "mainframe". Notice that it fails (no DNS record)</li></ul>
+      <ul><li>If not found in local DNS cache, will check local Host file. Will check local host file on disk (2nd fastest) Nslookup "mainframe". Notice that it fails (no DNS record)</li></ul>
+        <ul><li>Open up Notepad as an Admin</li></ul>
+            <img width="431" alt="image" src="https://github.com/user-attachments/assets/a7389ed7-1a54-4b5e-a790-8d0561bf1965" />
+            <img width="284" alt="image" src="https://github.com/user-attachments/assets/ca9d59a7-e574-4f30-b989-9362f4fae703" />
+        <ul><li>Look for host file</li></ul>
+        <ul><li>File > Open > File type: All Files > Windows > System32 > drivers > open > etc > hosts </li></ul>
+            <img width="498" alt="image" src="https://github.com/user-attachments/assets/97223105-c01c-46c7-b182-d20a47a85d9f" />
+
+    
+         <ul><li>Nslookup "mainframe". Notice that it fails (no DNS record)</li></ul>
+
     <li>Create an A-Record on the server and observe from the client</li> 
       <ul><li>Create a DNS A-Record on DC-1 for "mainframe" and have it point to DC-1' Private IP address</li></ul>
       <ul><li>Go back to Client-1 and try to ping it. Observe that it works</li></ul>
