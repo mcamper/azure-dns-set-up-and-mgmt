@@ -107,11 +107,9 @@ Building on a previously established domain controller and Client-1 VM, this tut
               <img width="317" alt="image" src="https://github.com/user-attachments/assets/04309da2-fc53-49da-a77a-8c5843bea8cc" />
               <img width="281" alt="image" src="https://github.com/user-attachments/assets/10be1511-0082-47d2-8622-e75e9abfcbab" />
               <img width="284" alt="image" src="https://github.com/user-attachments/assets/845b0621-cc22-44e9-95dc-4f9464bdeded" />
-
-
-
-
     <li>Attempt to ping "mainframe" again. Observe the address of the new record is showing up</li>
+              <img width="284" alt="image" src="https://github.com/user-attachments/assets/05081238-4828-4ab5-b0a6-066156e35ca6" />
+
     
   </ol>
 <p>
@@ -119,8 +117,14 @@ Building on a previously established domain controller and Client-1 VM, this tut
 <p>
   <ol>
      <li>Go back to DC-1 and create a CNAME record that points the host "search" to "www.google.com"</li>
+               <img width="475" alt="image" src="https://github.com/user-attachments/assets/e57c0618-7b9a-43bf-81f6-5f2e59b1f830" />
+               <img width="254" alt="image" src="https://github.com/user-attachments/assets/9de696f7-55ca-45a0-a3ab-2cd34bf3f7e9" /> 
+                <img width="468" alt="image" src="https://github.com/user-attachments/assets/b4b3a792-bed5-4e12-8a02-f694c00c9c2a" />
      <li>Go back to Client-1 and attempt to ping "search". Observe the results of the CNAME record</li>
+                <img width="276" alt="image" src="https://github.com/user-attachments/assets/880879b7-de01-437d-956a-f50bba913f45" />
      <li>On Client-1, nslookup "search". Observe the results of the CNAME record</li>
+                 <img width="289" alt="image" src="https://github.com/user-attachments/assets/7f313d99-12c6-460a-8485-b00c2fca9bd0" />
+
        
   </ol>
 <p>
