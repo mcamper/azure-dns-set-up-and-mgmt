@@ -41,8 +41,22 @@ Building on a previously established domain controller and Client-1 VM, this tut
   <ol>
     <li>Inspect DNS A-Records on the Server</li>
       <ul><li>Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin)</li></ul>
+        <img width="253" alt="image" src="https://github.com/user-attachments/assets/4975056a-7352-4bfd-a01c-209c4aefbef6" />
       <ul><li>Connect/log into Client-1 as an admin (mydomain\jane_admin)</li></ul>
-      <ul><li>From Client-1, try to ping "mainframe". Notice that it fails</li></ul>
+        <img width="254" alt="image" src="https://github.com/user-attachments/assets/07b5fbb8-9cb1-4fa4-a0fb-a2cbad83bfc9" />
+      <ul><li>From Client-1, try to ping "mainframe". First checks local DNS cache (fastest, in memory). Notice that it fails</li></ul>
+        <img width="473" alt="image" src="https://github.com/user-attachments/assets/f774c074-d634-4857-b09d-4396fce33406" />
+        <img width="481" alt="image" src="https://github.com/user-attachments/assets/8da583bf-520e-4bcb-9207-5190248763ec" />
+      <ul><li>Enter ipconfig /displaydns. Enter. Then print as a test file. ipconfig /displaydns </li></ul>
+          <img width="476" alt="image" src="https://github.com/user-attachments/assets/2f030ed3-107c-459d-9ca6-8e474c0c5d34" />
+      <ul><li>Enter ipconfig /displaydns > test.txt to print as a text file. Enter. Then enter, notepad test.txt to open file</li></ul>
+          <img width="364" alt="image" src="https://github.com/user-attachments/assets/ca59438c-6fbb-44b3-a3b0-5ab75d610bf5" />
+          <img width="425" alt="image" src="https://github.com/user-attachments/assets/118faf18-c0a6-4e37-a3ac-1995b3696e5d" />
+       <ul><li>Attempt to find "mainframe"</li></ul>
+          <img width="452" alt="image" src="https://github.com/user-attachments/assets/62f390af-f01d-46f8-8318-980583a3a526" />
+          <img width="243" alt="image" src="https://github.com/user-attachments/assets/3ecf8c4f-1e76-4eb5-808a-b6620c7467e8" />
+          <img width="143" alt="image" src="https://github.com/user-attachments/assets/be7fdbba-6189-492a-8b73-587f2d9517e4" />
+          <img width="425" alt="image" src="https://github.com/user-attachments/assets/118faf18-c0a6-4e37-a3ac-1995b3696e5d" />
       <ul><li>Nslookup "mainframe". Notice that it fails (no DNS record)</li></ul>
     <li>Create an A-Record on the server and observe from the client</li> 
       <ul><li>Create a DNS A-Record on DC-1 for "mainframe" and have it point to DC-1' Private IP address</li></ul>
