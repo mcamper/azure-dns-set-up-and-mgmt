@@ -65,14 +65,23 @@ Building on a previously established domain controller and Client-1 VM, this tut
             <img width="498" alt="image" src="https://github.com/user-attachments/assets/97223105-c01c-46c7-b182-d20a47a85d9f" />
             <img width="485" alt="image" src="https://github.com/user-attachments/assets/2c95f1f7-e51a-46b2-9fd8-66e96a6c9a00" />
             <img width="482" alt="image" src="https://github.com/user-attachments/assets/49601589-6c33-4a56-9b6c-012da677049d" />
-
-
-
-    
+          <ul><li>Note, not found in host file</li></ul>
+            <img width="386" alt="image" src="https://github.com/user-attachments/assets/05607ccc-9520-4a7c-ba37-50729a8b17e7" />
          <ul><li>Nslookup "mainframe". Notice that it fails (no DNS record)</li></ul>
-
+             <img width="335" alt="image" src="https://github.com/user-attachments/assets/596ec3f7-dfcc-4a7a-a3cf-4343c7557ff7" />
     <li>Create an A-Record on the server and observe from the client</li> 
       <ul><li>Create a DNS A-Record on DC-1 for "mainframe" and have it point to DC-1' Private IP address</li></ul>
+      <ul><li>Go back to DNS server (DC-1) </li></ul>
+            <img width="286" alt="image" src="https://github.com/user-attachments/assets/2e3245da-4a24-42a0-98fd-a97702198cb1" />
+            <img width="386" alt="image" src="https://github.com/user-attachments/assets/e5d77a5d-b694-4b8a-9666-6a29e2b814fa" />
+            <img width="474" alt="image" src="https://github.com/user-attachments/assets/04574893-e3c5-4057-b8af-7ce5a1850c27" />
+            <img width="468" alt="image" src="https://github.com/user-attachments/assets/2d3181e3-b8e2-4252-9728-f562d1067cc7" />
+            <img width="217" alt="image" src="https://github.com/user-attachments/assets/9febe1be-e8ed-48e4-9064-74d85d4f697b" />
+
+
+
+
+      
       <ul><li>Go back to Client-1 and try to ping it. Observe that it works</li></ul>
           
 </ol>
