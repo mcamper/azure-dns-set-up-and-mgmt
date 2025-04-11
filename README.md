@@ -42,9 +42,9 @@ Building on a previously established domain controller and Client-1 VM, this tut
 <p>
   <ol>
     <li>Inspect DNS A-Records on the Server</li>
-      <ul><li>Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin)</li></ul>
+      <ul><li>Connect/log into DC-1 as your domain admin account (mydomain.com\jane_admin) password: Cyberlab123!</li></ul>
         <img width="253" alt="image" src="https://github.com/user-attachments/assets/4975056a-7352-4bfd-a01c-209c4aefbef6" />
-      <ul><li>Connect/log into Client-1 as an admin (mydomain\jane_admin)</li></ul>
+      <ul><li>Connect/log into Client-1 as an admin (mydomain\jane_admin) password: Cyberlab123!</li></ul>
         <img width="254" alt="image" src="https://github.com/user-attachments/assets/07b5fbb8-9cb1-4fa4-a0fb-a2cbad83bfc9" />
       <ul><li>From Client-1, try to ping "mainframe". First checks local DNS cache (fastest, in memory). Notice that it fails</li></ul>
         <img width="473" alt="image" src="https://github.com/user-attachments/assets/f774c074-d634-4857-b09d-4396fce33406" />
