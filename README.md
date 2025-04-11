@@ -29,6 +29,8 @@ Building on a previously established domain controller and Client-1 VM, this tut
 - You've must have completed the last lab AzAD-DomainSetup(https://github.com/mcamper/AzAD-DomainSetup) and have the following setup:
   <ul><li>Active Directory running in Azure on a virtual machine (DC-1)</li>
   <li>A client machine running in Azure on a virtual machine (Client-1) and joined to the domain</li></ul>
+  <img width="970" alt="image" src="https://github.com/user-attachments/assets/b07d1642-f32f-49f4-8e17-566308e6de88" />
+
 
 <h2>Overview of DNS Setup and Management in Azure</h2>
 
