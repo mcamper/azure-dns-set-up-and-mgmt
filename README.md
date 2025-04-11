@@ -104,7 +104,7 @@ Building on a previously established domain controller and Client-1 VM, this tut
       <ul><li>Flush the DNS cache (ipconfig /flushdns)</li></ul>
               <img width="299" alt="image" src="https://github.com/user-attachments/assets/4c4fa23d-90fb-4874-9c5f-96807f0c2ede" />
               <img width="323" alt="image" src="https://github.com/user-attachments/assets/a453e8c7-6cb2-406d-a7b2-a1cc55b92dde" />
-      <ul><li>Observe that the cache is empty (iponfig /displaydns)</li></ul>
+      <ul><li>Observe that the cache is empty (ipconfig /displaydns)</li></ul>
               <img width="280" alt="image" src="https://github.com/user-attachments/assets/083e6681-3687-4c59-8f54-9d26d9515309" />
               <img width="317" alt="image" src="https://github.com/user-attachments/assets/04309da2-fc53-49da-a77a-8c5843bea8cc" />
               <img width="281" alt="image" src="https://github.com/user-attachments/assets/10be1511-0082-47d2-8622-e75e9abfcbab" />
